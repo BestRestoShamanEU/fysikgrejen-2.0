@@ -14,7 +14,9 @@ public class PhysicsLab {
 	
 	
  public static void main(String[] args) {
-	System.out.println(fahrenheitToCelsius(1));
+	
+	 
+	 
 }
 	public static double fahrenheitToCelsius(double fahrenheit) {
 		double celcius = (fahrenheit -32) * 5.0 / 9.0;
@@ -122,4 +124,17 @@ public class PhysicsLab {
 		double height = velocity * velocity / g_swe / 2.0;
 		return height;
 	}
+	
+	public static double force(double mass, double acceleration) {
+	double force = mass*acceleration;
+	return force;
+	}
+	
+	public static double distance(double acceleration, double time) {
+		double distance = acceleration * time * time /2.0;
+		return distance;
+	}
+	
 }
+
+
