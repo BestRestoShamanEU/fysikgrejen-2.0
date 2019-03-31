@@ -7,13 +7,32 @@ package Hangman;
 
 		public static void main(String[] args) {
 			
-            System.out.println("Skriv ett ord");
+          
             
-           
+            boolean CorrectInput = false;
+
+            char[] alfarr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
             Scanner hej = new Scanner(System.in);
-            String secretword = hej.nextLine();
-            
-			// TAR IN INPUT FRÅN SCANNERN OCH GÖR TILL EN STRING 
+            String secretword = "";
+
+            while (!CorrectInput) {
+                System.out.println("Skriv ett ord");
+                secretword = hej.next();
+
+                boolean wrong = false;
+
+               if(!secretword.matches("^[a-zA-Z]+$")){
+                   wrong = true;
+                   CorrectInput = false;
+               }
+
+                if(!wrong){
+                    CorrectInput = true;
+                }else{
+                    System.out.println("Ordet kan endast innehålla bokstäver!");
+                }
+            }
+			// TAR IN INPUT FRÅN SCANNERN OCH GÖR TILL EN STRING, SIFFROR KOMMER FÅ DEN ATT GE ETT FELMEDDELANDE OCH SEDAN BEGÄRA INPUT IGEN
             
 			for (int i = 0; i < 40; i++) {
 				System.out.println();
