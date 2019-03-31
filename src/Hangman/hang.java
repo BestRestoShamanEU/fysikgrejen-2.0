@@ -11,7 +11,7 @@ package Hangman;
             
             boolean CorrectInput = false;
 
-            char[] alfarr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+           
             Scanner hej = new Scanner(System.in);
             String secretword = "";
 
