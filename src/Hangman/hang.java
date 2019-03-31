@@ -9,6 +9,10 @@ package Hangman;
 			
             System.out.println("Skriv ett ord");
             
+            char[] alfarr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+            
+            //ÄR TILL FÖR ATT FÖRHINDRA INPUT AV SIFFROR MEN DEN ANVÄNDS INTE ÄNNU
+            
 			Scanner hej = new Scanner(System.in);
 
 			String secretword = hej.next();
