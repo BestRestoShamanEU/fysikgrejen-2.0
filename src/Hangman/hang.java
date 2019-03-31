@@ -9,16 +9,12 @@ package Hangman;
 			
             System.out.println("Skriv ett ord");
             
-            char[] alfarr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
+           
+            Scanner hej = new Scanner(System.in);
+            String secretword = hej.nextLine();
             
-            //ÄR TILL FÖR ATT FÖRHINDRA INPUT AV SIFFROR MEN DEN ANVÄNDS INTE ÄNNU
+			// TAR IN INPUT FRÅN SCANNERN OCH GÖR TILL EN STRING 
             
-			Scanner hej = new Scanner(System.in);
-
-			String secretword = hej.next();
-
-			// TAR IN INPUT FRÅN SCANNERN OCH GÖR TILL EN STRING :)))))))
-
 			for (int i = 0; i < 40; i++) {
 				System.out.println();
 			}
@@ -62,7 +58,7 @@ package Hangman;
 					}
 				}
 
-				// VI TESTAR BOKSTAV FÖR BOKSTAV OM GISSNINGEN ÄR SAMMA SOM BOKSTAVEN VID
+				// TESTAR BOKSTAV FÖR BOKSTAV OM GISSNINGEN ÄR SAMMA SOM BOKSTAVEN VID
 				// NUVARANDE INDEX
 
 				visibleword = newvisible;
