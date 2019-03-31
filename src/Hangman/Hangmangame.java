@@ -4,11 +4,19 @@ import java.util.Scanner;
 
 public class Hangmangame {
 	
-	Scanner scanner = new Scanner(System.in);
-	String secretword = scanner.nextLine();
-	
-	String visibleword = ""; 
-	
-	int lives = 5;
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String secretword = scanner.nextLine();
+		
+		//Ta in input :):)
+		
+		String visibleword = ""; 
+		//Denna strängen är just nu tom
+		
+		int lives = 5;
+		//Mängden liv användaren ska ha
+		
+		
+	}
 	
 }
